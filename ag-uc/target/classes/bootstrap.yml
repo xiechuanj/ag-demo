@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+        discovery:
+           service-id: ag-config
+           enabled: true
+        label: master  # git 分支
+        name: lisiService # uc
+        profile: dev # dev
+
