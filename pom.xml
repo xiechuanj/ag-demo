@@ -13,6 +13,7 @@
         <module>cg-zuul</module>
         <module>ag-uc</module>
         <module>cg-config</module>
+        <module>ag-common</module>
     </modules>
 
     <parent>

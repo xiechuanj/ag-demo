@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ag-common" />
         <module name="ag-uc" />
         <module name="cg-config" />
         <module name="cg-eureka" />
