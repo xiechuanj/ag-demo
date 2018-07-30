@@ -22,6 +22,9 @@
         <version>1.5.13.RELEASE</version>
     </parent>
 
+    <properties>
+        <mapper.version>3.4.0</mapper.version>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
