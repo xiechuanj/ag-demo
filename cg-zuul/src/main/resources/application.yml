@@ -12,4 +12,4 @@ zuul:
   routes:
     user-center:
       path: /user/**
-      serviceId: user-center
+      serviceId: ag-uc

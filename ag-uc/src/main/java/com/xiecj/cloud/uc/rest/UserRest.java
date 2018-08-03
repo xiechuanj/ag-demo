@@ -1,5 +1,6 @@
 package com.xiecj.cloud.uc.rest;
 
+import com.xiecj.cloud.common.rest.BaseController;
 import com.xiecj.cloud.uc.biz.BaseUserBiz;
 import com.xiecj.cloud.uc.entity.BaseUser;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("user")
-public class UserRest {
-    @Autowired
-    private BaseUserBiz userBiz;
-
-    @RequestMapping("/{id}")
-    public BaseUser getByID(@PathVariable Integer id)   {
-        return  userBiz.selectByPrimaryKey(id);
-    }
+public class UserRest extends BaseController<BaseUserBiz,BaseUser> {
+//    @Autowired
+//    private BaseUserBiz userBiz;
+//
+//    @RequestMapping("/{id}")
+//    public BaseUser getByID(@PathVariable Integer id)   {
+//        return  userBiz.selectByPrimaryKey(id);
+//    }
 
 //    @Value("${name}")
 //    private String name;
