@@ -11,5 +11,5 @@ zuul:
   prefix: /api
   routes:
     user-center:
-      path: /uc/**
+      path: /user/**
       serviceId: user-center

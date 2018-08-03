@@ -13,5 +13,8 @@
         <module name="cg-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ag-common" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
