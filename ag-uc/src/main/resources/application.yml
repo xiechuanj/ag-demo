@@ -31,3 +31,6 @@ server:
 mybatis:
     basepackage: com.xiecj.cloud.uc.mapper
     xmlLocation: classpath:mapper/**/*.xml
+logging:
+  level:
+    com.xiecj.cloud.uc.mapper: debug
