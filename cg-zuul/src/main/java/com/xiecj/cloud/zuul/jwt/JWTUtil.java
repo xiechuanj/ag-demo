@@ -10,8 +10,16 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class JWTUtil {
+    @Value("${jwt.expire}")
+    private int expire;
+    @Value("${jwt.pri-key.path}")
+    private String priKeyPath;
     @Value("${jwt.pub-key.path}")
     private String pubKeyPath;
+
+    public String generateToken(IJWTInfo jwtInfo) throws Exception{
+        return  JWTHelper.generateToken(jwtInfo,priKeyPath,expire);
+    }
 
     public IJWTInfo getInfoFromToken(String token) throws Exception {
         return JWTHelper.getInfoFromToken(token,pubKeyPath);

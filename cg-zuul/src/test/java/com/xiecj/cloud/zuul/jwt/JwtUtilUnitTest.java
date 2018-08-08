@@ -14,15 +14,17 @@ import static org.junit.Assert.assertEquals;
  * Created by ace on 2017/9/10.
  */
 public class JwtUtilUnitTest extends BaseUnitTest {
-//    @Autowired
-//    private JWTHelper util;
-//    @Test
-//    public void testJwt() throws Exception {
-//        String username = "admin";
-//        String userId = "1";
-//        String name = "老A";
-//        String token = util.generateToken(new JWTInfo(username,userId,name));
-//        IJWTInfo infoFromToken = util.getInfoFromToken(token);
-//        assertEquals(infoFromToken.getUniqueName(),username);
-//    }
+    @Autowired
+    private JWTUtil util;
+    @Test
+    public void testJwt() throws Exception {
+        String username = "admin";
+        String userId = "1";
+        String name = "老A";
+        String token = util.generateToken(new JWTInfo(username,userId,name));
+        System.out.println(token);
+        IJWTInfo infoFromToken = util.getInfoFromToken(token);
+        System.out.println(infoFromToken.getUniqueName());
+        assertEquals(infoFromToken.getUniqueName(),username);
+    }
 }
