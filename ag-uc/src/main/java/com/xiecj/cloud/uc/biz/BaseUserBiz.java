@@ -1,19 +1,18 @@
 package com.xiecj.cloud.uc.biz;
 
-import com.xiecj.cloud.uc.dao.BaseUserDao;
 import com.xiecj.cloud.uc.entity.BaseUser;
 import com.xiecj.cloud.uc.mapper.BaseUserMapper;
-import org.apache.ibatis.session.RowBounds;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.xiecj.cloud.common.biz.BaseBiz;
 
-import java.util.List;
-
 @Service
 @Transactional
 public class BaseUserBiz extends BaseBiz<BaseUserMapper,BaseUser>{
+//    @Override
+//    public BaseUser selectById(Object id) {
+//        throw new BaseException("Test Global Exception!", 400);
+//    }
 //    @Autowired
 //    private BaseUserMapper baseUserMapper;
 //

@@ -14,7 +14,7 @@ import org.joda.time.DateTime;
  */
 public class JWTHelper {
     /**
-     * 密钥加密token
+     * 密钥加密tokengenerateToken
      *
      * @param jwtInfo
      * @param priKeyPath

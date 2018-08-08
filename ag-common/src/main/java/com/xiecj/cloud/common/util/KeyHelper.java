@@ -53,6 +53,7 @@ public class KeyHelper {
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */
+
     public static void generateKey(String publicKeyFilename,String privateKeyFilename,String password) throws IOException, NoSuchAlgorithmException {
         KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
         SecureRandom secureRandom = new SecureRandom(password.getBytes());
@@ -69,7 +70,7 @@ public class KeyHelper {
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        generateKey("/Users/ace/git/ag-parent/ag-auth/src/main/resources/client/pub.key","/Users/ace/git/ag-parent/ag-auth/src/main/resources/client/pri.key","1*&623!f");
+        generateKey("E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pub.key","E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pri.key","1*&623!f");
     }
 }
 

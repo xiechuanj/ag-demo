@@ -13,3 +13,9 @@ zuul:
     user-center:
       path: /user/**
       serviceId: ag-uc
+jwt:
+  expire: 3600
+  pri-key:
+    path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pri.key
+  pub-key:
+    path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pub.key

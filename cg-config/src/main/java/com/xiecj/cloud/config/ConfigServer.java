@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 
 @SpringBootApplication
-@EnableDiscoveryClient
 @EnableEurekaClient
 @EnableConfigServer
 public class ConfigServer {
