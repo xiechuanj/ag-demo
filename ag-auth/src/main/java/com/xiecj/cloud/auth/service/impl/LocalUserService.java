@@ -1,8 +1,9 @@
-package com.xiecj.cloud.zuul.service.impl;
+package com.xiecj.cloud.auth.service.impl;
 
-import com.xiecj.cloud.zuul.bean.UserInfo;
-import com.xiecj.cloud.zuul.exception.UserInvalidException;
-import com.xiecj.cloud.zuul.service.UserService;
+
+import com.xiecj.cloud.auth.bean.UserInfo;
+import com.xiecj.cloud.auth.exception.UserInvalidException;
+import com.xiecj.cloud.auth.service.UserService;
 import org.springframework.stereotype.Service;
 
 @Service

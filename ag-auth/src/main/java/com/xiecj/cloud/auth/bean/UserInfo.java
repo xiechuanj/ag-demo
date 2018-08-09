@@ -1,4 +1,4 @@
-package com.xiecj.cloud.zuul.bean;
+package com.xiecj.cloud.auth.bean;
 
 import com.xiecj.cloud.common.util.jwt.IJWTInfo;
 

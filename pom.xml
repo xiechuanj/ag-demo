@@ -14,6 +14,7 @@
         <module>ag-uc</module>
         <module>cg-config</module>
         <module>ag-common</module>
+        <module>ag-auth</module>
     </modules>
 
     <parent>

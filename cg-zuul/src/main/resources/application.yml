@@ -11,11 +11,11 @@ zuul:
   prefix: /api
   routes:
     user-center:
-      path: /user/**
+      path: /uc/**
       serviceId: ag-uc
+    auth-server:
+      path: /auth/**
+      serviceId: ag-auth
 jwt:
-  expire: 3600
-  pri-key:
-    path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\main\\resources\\pri.key
   pub-key:
     path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\main\\resources\\pub.key

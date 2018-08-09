@@ -1,12 +1,10 @@
-package com.xiecj.cloud.zuul.rest;
+package com.xiecj.cloud.auth.rest;
 
 
-import com.xiecj.cloud.common.vo.BaseResponse;
+import com.xiecj.cloud.auth.bean.UserInfo;
+import com.xiecj.cloud.auth.jwt.JWTUtil;
+import com.xiecj.cloud.auth.service.UserService;
 import com.xiecj.cloud.common.vo.ObjectRestResponse;
-import com.xiecj.cloud.zuul.bean.UserInfo;
-import com.xiecj.cloud.zuul.exception.UserInvalidException;
-import com.xiecj.cloud.zuul.jwt.JWTUtil;
-import com.xiecj.cloud.zuul.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

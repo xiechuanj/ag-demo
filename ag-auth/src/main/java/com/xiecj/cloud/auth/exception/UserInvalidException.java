@@ -1,8 +1,7 @@
-package com.xiecj.cloud.zuul.exception;
+package com.xiecj.cloud.auth.exception;
 
 import com.xiecj.cloud.common.constants.CommonConstants;
 import com.xiecj.cloud.common.exception.BaseException;
-
 
 
 public class UserInvalidException extends BaseException {

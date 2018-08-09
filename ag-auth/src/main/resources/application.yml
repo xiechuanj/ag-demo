@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ag-auth
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 7774
+
+jwt:
+  expire: 3600
+  pri-key:
+    path: E:\\workspaces\\ag-demo\\ag-auth\\src\\main\\resources\\pri.key
+  pub-key:
+    path: E:\\workspaces\\ag-demo\\ag-auth\\src\\main\\resources\\pub.key
