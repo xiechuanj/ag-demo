@@ -4,7 +4,7 @@
 ////import com.xiecj.cloud.common.util.jwt.JWTHelper;
 ////import com.xiecj.cloud.common.util.jwt.JWTInfo;
 ////import com.xiecj.cloud.zuul.jwt.BaseUnitTest;
-////import com.xiecj.cloud.zuul.jwt.JWTUtil;
+////import com.xiecj.cloud.zuul.jwt.jwt;
 ////import org.junit.Test;
 ////import org.springframework.beans.factory.annotation.Autowired;
 ////import static org.junit.Assert.assertEquals;
@@ -15,7 +15,7 @@
 // */
 //public class JwtUtilUnitTest extends BaseUnitTest {
 ////    @Autowired
-////    private JWTUtil util;
+////    private jwt util;
 ////    @Test
 ////    public void testJwt() throws Exception {
 ////        String username = "admin";
