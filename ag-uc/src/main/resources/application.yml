@@ -34,3 +34,7 @@ mybatis:
 logging:
   level:
     com.xiecj.cloud.uc.mapper: debug
+jwt:
+  token-header: access-token
+  pub-key:
+    path: E:\\workspaces\\ag-demo\\ag-uc\\src\\main\\resources\\pub.key

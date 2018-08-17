@@ -60,7 +60,9 @@ public class BaseContextHandler {
         set(CommonConstants.CONTEXT_KEY_USERNAME,username);
     }
 
-    public static void setName(String name){set(CommonConstants.CONTEXT_KEY_USER_NAME,name);}
+    public static void setName(String name){
+        set(CommonConstants.CONTEXT_KEY_USER_NAME,name);
+    }
 
     public static void remove(){
         threadLocal.remove();

@@ -1,5 +1,6 @@
 package com.xiecj.cloud.uc.rest;
 
+import com.xiecj.cloud.common.context.BaseContextHandler;
 import com.xiecj.cloud.common.rest.BaseController;
 import com.xiecj.cloud.uc.biz.BaseUserBiz;
 import com.xiecj.cloud.uc.entity.BaseUser;
@@ -9,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("user")
 public class UserRest extends BaseController<BaseUserBiz,BaseUser> {
+    @RequestMapping("/who")
+    public String getCurrentUser(){
+        return  BaseContextHandler.getUsername();
+    }
 //    @Autowired
 //    private BaseUserBiz userBiz;
 //
