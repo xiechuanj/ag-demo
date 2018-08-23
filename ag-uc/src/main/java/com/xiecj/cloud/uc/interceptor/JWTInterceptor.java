@@ -3,6 +3,8 @@ package com.xiecj.cloud.uc.interceptor;
 import com.xiecj.cloud.common.context.BaseContextHandler;
 import com.xiecj.cloud.common.util.jwt.IJWTInfo;
 import com.xiecj.cloud.uc.jwt.JWTUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -13,12 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 
 @Configuration
 public class JWTInterceptor extends HandlerInterceptorAdapter {
+    private Logger logger = LoggerFactory.getLogger(ClientInterceptor.class);
     @Value("${jwt.token-header}")
     private String tokenHeader;
     @Autowired
     private JWTUtil jwtUtil;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        logger.info("jwt interceptor...");
         String token = request.getHeader(tokenHeader);
         IJWTInfo infoFromToken = jwtUtil.getInfoFromToken(token);
         BaseContextHandler.setUsername(infoFromToken.getUniqueName());

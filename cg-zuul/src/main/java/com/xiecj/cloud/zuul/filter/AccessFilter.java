@@ -9,6 +9,7 @@ import com.xiecj.cloud.common.vo.BaseResponse;
 import com.xiecj.cloud.zuul.jwt.JWTUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,11 @@ import static org.junit.Assert.assertEquals;
 
 @Component
 public class AccessFilter extends ZuulFilter {
+    @Value("${client.id}")
+    private String clientId;
+    @Value("${client.secret}")
+    private String clientSecret;
+    
     @Autowired
     private  JWTUtil jwtUtil;
     @Override

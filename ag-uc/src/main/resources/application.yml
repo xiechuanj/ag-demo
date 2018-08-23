@@ -37,4 +37,11 @@ logging:
 jwt:
   token-header: access-token
   pub-key:
-    path: E:\\workspaces\\ag-demo\\ag-uc\\src\\main\\resources\\pub.key
+    path: E:\\workspaces\\ag-demo\\ag-uc\\src\\main\\resources\\jwt\\pub.key
+
+client:
+  id: user-center
+  secret: 123456
+  token-header: client-token
+  pub-key:
+    path: E:\\workspaces\\ag-demo\\ag-uc\\src\\main\\resources\\client\\pub.key

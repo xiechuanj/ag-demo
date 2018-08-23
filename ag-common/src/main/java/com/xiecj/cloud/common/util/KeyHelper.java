@@ -70,7 +70,8 @@ public class KeyHelper {
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        generateKey("E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pub.key","E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pri.key","1*&623!f");
+        generateKey("e:/workspaces/ag-demo/ag-auth/src/main/resources/client/pub.key","e:/workspaces/ag-demo/ag-auth/src/main/resources/client/pri.key", "1*&623!f");
+//        generateKey("E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pub.key","E:\\workspaces\\ag-demo\\cg-zuul\\src\\test\\resources\\pri.key","1*&623!f");
     }
 }
 

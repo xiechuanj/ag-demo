@@ -19,3 +19,7 @@ zuul:
 jwt:
   pub-key:
     path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\main\\resources\\pub.key
+
+client:
+  id: ag-gate
+  secret: 123456

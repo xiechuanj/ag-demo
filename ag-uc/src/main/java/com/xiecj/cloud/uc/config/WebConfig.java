@@ -1,6 +1,7 @@
 package com.xiecj.cloud.uc.config;
 
 import com.xiecj.cloud.common.handler.GlobalExceptionHandler;
+import com.xiecj.cloud.uc.interceptor.ClientInterceptor;
 import com.xiecj.cloud.uc.interceptor.JWTInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +17,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(getClientInterceptor()).addPathPatterns("/**");
         registry.addInterceptor(getJWTInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
@@ -23,5 +25,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     JWTInterceptor getJWTInterceptor(){
         return new JWTInterceptor();
+    }
+
+    @Bean
+    ClientInterceptor getClientInterceptor(){
+        return new ClientInterceptor();
     }
 }
