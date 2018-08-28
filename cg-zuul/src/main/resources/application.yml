@@ -17,9 +17,12 @@ zuul:
       path: /auth/**
       serviceId: ag-auth
 jwt:
+  token-header: access-token
+  ignore-url: /auth/jwt
   pub-key:
     path: E:\\workspaces\\ag-demo\\cg-zuul\\src\\main\\resources\\pub.key
 
 client:
+  token-header: client-token
   id: ag-gate
   secret: 123456
