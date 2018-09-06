@@ -2,6 +2,7 @@ package com.xiecj.cloud.uc.config;
 
 import com.xiecj.cloud.common.handler.GlobalExceptionHandler;
 import com.xiecj.cloud.uc.interceptor.ClientInterceptor;
+import com.xiecj.cloud.uc.interceptor.ClientTokenInterceptor;
 import com.xiecj.cloud.uc.interceptor.JWTInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,5 +31,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     ClientInterceptor getClientInterceptor(){
         return new ClientInterceptor();
+    }
+
+    @Bean
+    ClientTokenInterceptor getClientTokenInterceptor(){
+        return  new ClientTokenInterceptor();
     }
 }
